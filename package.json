@@ -1,0 +1,30 @@
+{
+  "name": "try-typescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "tslint 'src/**/*.ts'",
+    "clean": "rimraf ./dist",
+    "start": "node dist/index.js",
+    "build": "npm run lint && npm run clean && tsc && npm run start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kunihiko-sugiura/try-typescript.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kunihiko-sugiura/try-typescript/issues"
+  },
+  "homepage": "https://github.com/kunihiko-sugiura/try-typescript#readme",
+  "devDependencies": {
+    "cross-env": "^5.2.0",
+    "rimraf": "^2.6.2",
+    "tslint": "^5.11.0",
+    "tslint-config-airbnb": "^5.9.2",
+    "tsutils": "^3.0.0",
+    "typescript": "^3.0.1"
+  }
+}
